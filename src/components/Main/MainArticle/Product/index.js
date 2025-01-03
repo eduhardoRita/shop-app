@@ -4,8 +4,8 @@ import ImageOfProductTwo  from "../../../../assets/game-two.jpg"
 import ImageOfProductThree from "../../../../assets/game-three.jpg"
 import ImageOfProductFour from "../../../../assets/game-four.jpg"
 import ImageOfProductFive from "../../../../assets/game-five.jpg"
-import { addToCart } from "../../../../actions"
 import { useDispatch } from "react-redux"
+import { addCart } from "../../../../state/shop.slice"
 
 const Products = () => {
   const dispatch = useDispatch();    
@@ -43,7 +43,7 @@ const Products = () => {
     ];
 
     const handleAddToCart = (product) => {
-      dispatch(addToCart(product));
+      dispatch(addCart(product));
     };
 
     return (

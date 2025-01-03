@@ -1,8 +1,8 @@
 import React from "react";
 import { MainContainer } from "./styles";
-import Header from "../Header";
-import ItemContainer from "../Main";
-import Cart from "../Main/Cart";
+import Header from "../components/Header";
+import Cart from "../components/Main/Cart";
+import ItemContainer from "../components/Main"
 
 const App = () => {
   return (

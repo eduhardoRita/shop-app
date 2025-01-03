@@ -1,14 +1,14 @@
-import { removeFromCart } from "../../../actions";
+import { removeProduct } from "../../../state/shop.slice";
 import { ProductImage } from "../MainArticle/Product/styles";
-import { CartTitle, ProductsInCart, StateCart, StyledCard, SubTitleCart } from "./styles";
+import { CartTitle, StateCart, ProductsInCart, StyledCard, SubTitleCart } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const productsInCart = useSelector((state) => state.products.cart);
+  const productsInCart = useSelector((state) => state.shop.shop.cart);
 
-  const handleRemoveFromCart = (productId) => {
-    dispatch(removeFromCart(productId))
+  const handleRemoveFromCart = (product) => {
+    dispatch(removeProduct(product))
   }
 
   return (
