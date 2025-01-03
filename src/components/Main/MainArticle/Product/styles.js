@@ -1,9 +1,20 @@
 import styled from "styled-components";
 
+const ProductContainer = styled.div`
+    width: 19%;
+    height: auto;
+`;
+
 const ProductImage = styled.img`
     width: 250px;
     height: 300px;
 `;
+
+const ProductImageContainer = ({ image }) => {
+    return (
+        <ProductImage src={image} />
+    )
+}
 
 const TitleProduct = styled.h4`
     color: #ffffff;
@@ -26,4 +37,4 @@ const ButtonBuy = styled.button`
     display: block;
 `;
 
-export {ProductImage, TitleProduct, CostProduct, ButtonBuy};
+export {ProductContainer, ProductImage, ProductImageContainer, TitleProduct, CostProduct, ButtonBuy};

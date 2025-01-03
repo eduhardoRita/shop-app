@@ -4,7 +4,7 @@ import { SecondaryTitle, StyledItemContaineir } from "./styles";
 const ItemContainer = () => {
     return (
         <StyledItemContaineir>
-            <SecondaryTitle>Selecciona tu juego favorito</SecondaryTitle>
+            <SecondaryTitle>Aqui encontraras diferentes productos</SecondaryTitle>
             <ShoppingSection />
         </StyledItemContaineir>
     )
