@@ -25,6 +25,11 @@ const ProductsInCart = styled.section`
 
 const StateCart =  styled.div`
     color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
 `;
 
 export {StyledCard, CartTitle, SubTitleCart, ProductsInCart, StateCart};

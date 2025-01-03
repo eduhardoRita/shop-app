@@ -4,7 +4,7 @@ const Header = ( ) =>{
     return (
         <>
             <StyledHeader>
-                <MainTitle>Video Game Store</MainTitle>
+                <MainTitle>Todo hay Shop</MainTitle>
             </StyledHeader>
         </>        
     )
